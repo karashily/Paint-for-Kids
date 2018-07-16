@@ -105,7 +105,7 @@ void ApplicationManager::ExecuteAction(ActionType ActType)
 			break;
 		case TO_PLAY:
 			pAct = new PickAndHide(this);
-
+			break;
 		case EXIT:
 			///create ExitAction here
 			pAct = new Exit(this);
