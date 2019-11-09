@@ -33,12 +33,11 @@ enum DrawMenuItem //The items of the Draw menu (you should add more items)
 	DEL1,
 	SAVE1,
 	LOAD1,
-	//TODO: Add more items names here
+
 	PLAY,
 	ITM_EXIT,		//Exit item
 	
-	DRAW_ITM_COUNT		//no. of menu items ==> This should be the last line in this enum
-	
+	DRAW_ITM_COUNT		//no. of menu items ==> This should be the last line in this enum	
 };
 
 enum PlayMenuItem //The items of the Play menu (you should add more items)
@@ -46,7 +45,6 @@ enum PlayMenuItem //The items of the Play menu (you should add more items)
 	//Note: Items are ordered here as they appear in menu
 	//If you want to change the menu items order, change the order here
 	
-	//TODO: Add more items names here
 	PICK_FIGURE,
 	PICK_COLOR,
 	PICK_FILLED,
@@ -76,7 +74,7 @@ struct UI_Info	//User Interface Info.
 
 	bool filled_OR_not;
 	
-	int	width, height,	//Window width and height
+	int	width, height,		//Window width and height
 		wx , wy,			//Window starting coordinates
 		StatusBarHeight,	//Status Bar Height
 		ToolBarHeight,		//Tool Bar Height (distance from top of window to bottom line of toolbar)

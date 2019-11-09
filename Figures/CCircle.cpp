@@ -1,6 +1,4 @@
 #include "CCircle.h"
-#include "Figures\CFigure.h"
-#include "GUI\Output.h"
 #include <cmath>
 #include <iostream>
 #include <fstream>

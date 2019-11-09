@@ -2,24 +2,26 @@
 
 int main()
 {
-	ActionType ActType;
+	ActionType actType;
+
 	//Create an object of ApplicationManager
-	ApplicationManager AppManager;
+	ApplicationManager appManager;
 
 	do
-	{		
+	{
 		//Read user action
-		ActType = AppManager.GetUserAction();
+		actType = appManager.GetUserAction();
 
 		//Exexute the action
-		AppManager.ExecuteAction(ActType);
+		appManager.ExecuteAction(actType);
+
 		//Update the interface
-		AppManager.UpdateInterface();	
+		appManager.UpdateInterface();
 
-	}while(ActType != EXIT);
-	
+	} while (actType != EXIT);
 
-	
+
+
 	return 0;
 }
 

@@ -1,10 +1,10 @@
 #pragma once
-#include "Actions\Action.h"
-#include "GUI\UI_Info.h"
-#include "GUI\Input.h"
-#include "GUI\Output.h"
-#include "Figures\CFigure.h"
-#include "ApplicationManager.h"
+#include "Action.h"
+#include "..\GUI\UI_Info.h"
+#include "..\GUI\Input.h"
+#include "..\GUI\Output.h"
+#include "..\Figures\CFigure.h"
+#include "..\ApplicationManager.h"
 #include <vector>
 
 class ChangeFigureColors :public Action

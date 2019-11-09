@@ -2,6 +2,7 @@
 #define ADD_RECT_ACTION_H
 
 #include "Action.h"
+#include <fstream>
 
 //Add Rectangle Action class
 class AddRectAction: public Action

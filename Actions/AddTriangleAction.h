@@ -1,5 +1,9 @@
 #pragma once
-#include "Actions\Action.h"
+#include "Action.h"
+#include "..\GUI\Output.h"
+#include "..\GUI\Input.h"
+#include "..\ApplicationManager.h"
+
 class AddTriangleAction :public Action{
 	Point P1;
 	Point P2;

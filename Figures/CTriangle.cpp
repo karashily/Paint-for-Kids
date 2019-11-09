@@ -1,6 +1,4 @@
 #include "CTriangle.h"
-#include"Figures\CFigure.h"
-#include "GUI\Output.h"
 #include <iostream>
 #include <fstream>
 

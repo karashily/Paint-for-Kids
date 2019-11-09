@@ -1,12 +1,12 @@
 #pragma once
-#include "Actions\Action.h"
+#include "Action.h"
 #include <vector>
-#include "Figures\CFigure.h"
-#include "ApplicationManager.h"
-#include "CLine.h"
-#include "CCircle.h"
-#include "CTriangle.h"
-#include "Figures\CRectangle.h"
+#include "..\Figures\CFigure.h"
+#include "..\ApplicationManager.h"
+#include "..\Figures\CLine.h"
+#include "..\Figures\CCircle.h"
+#include "..\Figures\CTriangle.h"
+#include "..\Figures\CRectangle.h"
 
 
 class PickByColor;

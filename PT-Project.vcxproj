@@ -13,12 +13,12 @@
   <PropertyGroup Label="Globals">
     <ProjectName>PT Project</ProjectName>
     <ProjectGuid>{1AC3DDD7-FDDE-487E-A2A4-52A8FCF7BDB9}</ProjectGuid>
-    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
@@ -129,15 +129,21 @@
     </Bscmake>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Actions\AddCircleAction.cpp" />
+    <ClCompile Include="Actions\AddLineAction.cpp" />
+    <ClCompile Include="Actions\AddTriangleAction.cpp" />
+    <ClCompile Include="Actions\ChangeCurrentColors.cpp" />
+    <ClCompile Include="Actions\ChangeFigureColors.cpp" />
     <ClCompile Include="Actions\Copy_Figures.cpp" />
+    <ClCompile Include="Actions\Delete.cpp" />
+    <ClCompile Include="Actions\Exit.cpp" />
+    <ClCompile Include="Actions\Load.cpp" />
     <ClCompile Include="Actions\Paste_Figures.cpp" />
     <ClCompile Include="Actions\CutAction.cpp" />
-    <ClCompile Include="AddCircleAction.cpp" />
-    <ClCompile Include="AddLineAction.cpp" />
-    <ClCompile Include="AddTriangleAction.cpp" />
-    <ClCompile Include="ChangeCurrentColors.cpp" />
-    <ClCompile Include="ChangeFigureColors.cpp" />
-    <ClCompile Include="CCircle.cpp" />
+    <ClCompile Include="Actions\PickAndHide.cpp" />
+    <ClCompile Include="Actions\Rotate.cpp" />
+    <ClCompile Include="Actions\Save.cpp" />
+    <ClCompile Include="Actions\Select.cpp" />
     <ClCompile Include="CMUgraphicsLib\auxil.cpp" />
     <ClCompile Include="CMUgraphicsLib\CMUgraphics.cpp" />
     <ClCompile Include="CMUgraphicsLib\image.cpp" />
@@ -173,32 +179,33 @@
     <ClCompile Include="CMUgraphicsLib\jpeg\jquant1.c" />
     <ClCompile Include="CMUgraphicsLib\jpeg\jquant2.c" />
     <ClCompile Include="CMUgraphicsLib\jpeg\jutils.c" />
-    <ClCompile Include="Delete.cpp" />
-    <ClCompile Include="Exit.cpp" />
+    <ClCompile Include="Figures\CCircle.cpp" />
     <ClCompile Include="Figures\CFigure.cpp" />
+    <ClCompile Include="Figures\CLine.cpp" />
     <ClCompile Include="Figures\CRectangle.cpp" />
     <ClCompile Include="Actions\AddRectAction.cpp" />
+    <ClCompile Include="Figures\CTriangle.cpp" />
     <ClCompile Include="GUI\Input.cpp" />
     <ClCompile Include="GUI\Output.cpp" />
     <ClCompile Include="ApplicationManager.cpp" />
-    <ClCompile Include="CLine.cpp" />
-    <ClCompile Include="Load.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="PickAndHide.cpp" />
-    <ClCompile Include="Save.cpp" />
-    <ClCompile Include="Select.cpp" />
-    <ClCompile Include="CTriangle.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Actions\AddCircleAction.h" />
+    <ClInclude Include="Actions\AddLineAction.h" />
+    <ClInclude Include="Actions\AddTriangleAction.h" />
+    <ClInclude Include="Actions\ChangeCurrentColors.h" />
+    <ClInclude Include="Actions\ChangeFigureColors.h" />
     <ClInclude Include="Actions\Copy_Figures.h" />
     <ClInclude Include="Actions\CutAction.h" />
+    <ClInclude Include="Actions\Delete.h" />
+    <ClInclude Include="Actions\Exit.h" />
+    <ClInclude Include="Actions\Load.h" />
     <ClInclude Include="Actions\Paste_Figures.h" />
-    <ClInclude Include="AddCircleAction.h" />
-    <ClInclude Include="AddLineAction.h" />
-    <ClInclude Include="AddTriangleAction.h" />
-    <ClInclude Include="ChangeCurrentColors.h" />
-    <ClInclude Include="ChangeFigureColors.h" />
-    <ClInclude Include="CCircle.h" />
+    <ClInclude Include="Actions\PickAndHide.h" />
+    <ClInclude Include="Actions\Rotate.h" />
+    <ClInclude Include="Actions\Save.h" />
+    <ClInclude Include="Actions\Select.h" />
     <ClInclude Include="CMUgraphicsLib\auxil.h" />
     <ClInclude Include="CMUgraphicsLib\CMUgraphics.h" />
     <ClInclude Include="CMUgraphicsLib\colors.h" />
@@ -219,23 +226,18 @@
     <ClInclude Include="CMUgraphicsLib\jpeg\jpegint.h" />
     <ClInclude Include="CMUgraphicsLib\jpeg\jpeglib.h" />
     <ClInclude Include="CMUgraphicsLib\jpeg\jversion.h" />
-    <ClInclude Include="Delete.h" />
-    <ClInclude Include="Exit.h" />
+    <ClInclude Include="Figures\CCircle.h" />
     <ClInclude Include="Figures\CFigure.h" />
+    <ClInclude Include="Figures\CLine.h" />
     <ClInclude Include="Figures\CRectangle.h" />
     <ClInclude Include="Actions\Action.h" />
     <ClInclude Include="Actions\AddRectAction.h" />
+    <ClInclude Include="Figures\CTriangle.h" />
     <ClInclude Include="GUI\Input.h" />
     <ClInclude Include="GUI\Output.h" />
     <ClInclude Include="GUI\UI_Info.h" />
     <ClInclude Include="ApplicationManager.h" />
     <ClInclude Include="DEFS.h" />
-    <ClInclude Include="CLine.h" />
-    <ClInclude Include="Load.h" />
-    <ClInclude Include="PickAndHide.h" />
-    <ClInclude Include="Save.h" />
-    <ClInclude Include="Select.h" />
-    <ClInclude Include="CTriangle.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />

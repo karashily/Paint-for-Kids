@@ -1,9 +1,6 @@
 #include "AddLineAction.h"
-#include "ApplicationManager.h"
-#include "GUI\input.h"
-#include "GUI\Output.h"
-#include "CLine.h"
 #include <fstream>
+
 
 AddLineAction::AddLineAction(ApplicationManager * pApp):Action(pApp)
 {}

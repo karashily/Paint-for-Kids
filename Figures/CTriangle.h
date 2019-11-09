@@ -1,6 +1,7 @@
 #pragma once
-#include "Figures\CFigure.h"
-#include "GUI\Output.h"
+#include "CFigure.h"
+#include "..\GUI\Output.h"
+
 class CTriangle : public CFigure
 {
 	int ID;

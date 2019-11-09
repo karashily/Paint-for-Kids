@@ -1,7 +1,5 @@
 #include "ChangeFigureColors.h"
-#include "ApplicationManager.h"
-#include "GUI\input.h"
-#include "GUI\Output.h"
+
 ChangeFigureColors::ChangeFigureColors(ApplicationManager *pApp,GUI_MODE mode):Action(pApp),MODE(mode)
 {
 	UI.InterfaceMode=MODE;

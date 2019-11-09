@@ -1,6 +1,7 @@
 #pragma once
-#include "Actions\Action.h"
-#include "ApplicationManager.h"
+#include "Action.h"
+#include "..\ApplicationManager.h"
+
 class Load:public Action
 {
 	string filename;

@@ -9,8 +9,6 @@ ApplicationManager::ApplicationManager()
 	pIn = pOut->CreateInput();
 	
 	FigCount = 0;
-		
-	//Create an array of figure pointers and set them to NULL		
 }
 
 //==================================================================================//

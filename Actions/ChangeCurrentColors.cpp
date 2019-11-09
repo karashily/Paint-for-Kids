@@ -1,7 +1,4 @@
 #include "ChangeCurrentColors.h"
-#include "ApplicationManager.h"
-#include "GUI\input.h"
-#include "GUI\Output.h"
 
 ChangeCurrentColors::ChangeCurrentColors(ApplicationManager* app):Action(app)
 {

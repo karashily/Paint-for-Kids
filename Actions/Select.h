@@ -1,10 +1,11 @@
 #pragma once
-#include "Actions\Action.h"
-#include "GUI\Input.h"
-#include "GUI\Output.h"
-#include "Figures\CFigure.h"
-#include "ApplicationManager.h"
 #include <vector>
+#include "Action.h"
+#include "..\GUI\Input.h"
+#include "..\GUI\Output.h"
+#include "..\Figures\CFigure.h"
+#include "..\ApplicationManager.h"
+
 
 class Select :public Action
 {

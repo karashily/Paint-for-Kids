@@ -1,17 +1,21 @@
 #pragma once
-#include "Actions\Action.h"
-class AddLineAction :public Action{
+#include "Action.h"
+#include "..\Figures\CCircle.h"
+#include <fstream>
+
+class AddCircleAction :public Action
+{
 	Point P1;
 	Point P2;
 	GfxInfo RectGfxInfo;
 	public:
-		AddLineAction(ApplicationManager *pApp);
+		AddCircleAction(ApplicationManager *pApp);
 
 	//Reads rectangle parameters
 	virtual void ReadActionParameters();
 	
-	void Load(ifstream& input);
-
 	//Add rectangle to the ApplicationManager
 	virtual void Execute() ;
+
+	void Load(ifstream& input);
 };
