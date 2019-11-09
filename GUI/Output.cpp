@@ -18,17 +18,17 @@ Output::Output()
 
 	UI.DrawColor = BLUE;	//Drawing color
 	UI.FillColor = GREEN;	//Filling color
-	UI.MsgColor = RED;		//Messages color
-	UI.BkGrndColor = LIGHTGOLDENRODYELLOW;	//Background color
+	UI.MsgColor = WHITE;		//Messages color
+	UI.BkGrndColor = WHITE;	//Background color
 	UI.HighlightColor = MAGENTA;	//This color should NOT be used to draw figures. use if for highlight only
-	UI.StatusBarColor = TURQUOISE;
+	UI.StatusBarColor = DIMGRAY;
 	UI.PenWidth = 10;	//width of the figures frames
 
 
 	//Create the output window
 	pWind = CreateWind(UI.width, UI.height, UI.wx, UI.wy);
 	//Change the title
-	pWind->ChangeTitle("Paint for Kids - Programming Techniques Project");
+	pWind->ChangeTitle("Paint for Kids");
 
 	CreateDrawToolBar();
 	CreateStatusBar();
@@ -74,10 +74,10 @@ void Output::ClearToolBar()const
 	GfxInfo gfxInfo;
 	Point P1, P2;
 	P1.x = 0; P1.y = 0;
-	P2.x = UI.width; P2.y = UI.ToolBarHeight;
-	gfxInfo.DrawClr = WHITE;	//any color for border
-	gfxInfo.FillClr = WHITE;//any color for filling
-	gfxInfo.isFilled = true;//Figure is filled
+	P2.x = UI.width; P2.y = UI.ToolBarHeight + 3;
+	gfxInfo.DrawClr = LIGHTGREY;	//any color for border
+	gfxInfo.FillClr = LIGHTGREY;	//any color for filling
+	gfxInfo.isFilled = true;	//Figure is filled
 
 	DrawRect(P1, P2, gfxInfo, false);
 }
@@ -113,7 +113,6 @@ void Output::CreateDrawToolBar() const
 	MenuItemImages[PLAY] = "images\\MenuItems\\playm.jpg";
 	MenuItemImages[ITM_EXIT] = "images\\MenuItems\\exit2.jpg";
 
-	//TODO: Prepare images for each menu item and add it to the list
 
 	//Draw menu item one image at a time
 	for (int i = 0; i < DRAW_ITM_COUNT; i++)

@@ -141,7 +141,6 @@
     <ClCompile Include="Actions\Paste_Figures.cpp" />
     <ClCompile Include="Actions\CutAction.cpp" />
     <ClCompile Include="Actions\PickAndHide.cpp" />
-    <ClCompile Include="Actions\Rotate.cpp" />
     <ClCompile Include="Actions\Save.cpp" />
     <ClCompile Include="Actions\Select.cpp" />
     <ClCompile Include="CMUgraphicsLib\auxil.cpp" />
@@ -203,7 +202,6 @@
     <ClInclude Include="Actions\Load.h" />
     <ClInclude Include="Actions\Paste_Figures.h" />
     <ClInclude Include="Actions\PickAndHide.h" />
-    <ClInclude Include="Actions\Rotate.h" />
     <ClInclude Include="Actions\Save.h" />
     <ClInclude Include="Actions\Select.h" />
     <ClInclude Include="CMUgraphicsLib\auxil.h" />
