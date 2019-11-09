@@ -1,6 +1,7 @@
 # Paint-for-Kids
 a Paint-like application intended for kids implemented in C++ and uses CMU graphics library for the GUI.
-Application was made as a Project for OOP Course. 
+Application was made as a Project for OOP Course.
+Project is optimized to run on VS.
 
 Application allows children learn about different shapes and colors while playing with them. 
 
